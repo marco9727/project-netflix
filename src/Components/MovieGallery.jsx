@@ -3,14 +3,14 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Loading from "./Loading";
 
-class FirstGallery extends Component {
+class MovieGallery extends Component {
   state = {
     listMovies: [],
     isLoading: true,
   };
 
   fetchMovies = () => {
-    fetch("http://www.omdbapi.com/?apikey=75f1754f&s=spider-man")
+    fetch("http://www.omdbapi.com/?apikey=75f1754f&s=" + this.props.title)
       .then((resp) => {
         if (resp.ok) {
           return resp.json();
@@ -65,4 +65,4 @@ class FirstGallery extends Component {
   }
 }
 
-export default FirstGallery;
+export default MovieGallery;

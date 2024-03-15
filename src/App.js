@@ -4,9 +4,7 @@ import NavbarNetflix from "./Components/NavbarNetflix";
 import FooterNetflix from "./Components/FooterNetflix";
 import HeaderTvShow from "./Components/TVShowHeader";
 import Container from "react-bootstrap/Container";
-import FirstGallery from "./Components/FirstGallery";
-import SecondGallery from "./Components/SecondGallery";
-import ThirdGallery from "./Components/ThirdGallery";
+import MovieGallery from "./Components/MovieGallery";
 
 function App() {
   return (
@@ -15,11 +13,11 @@ function App() {
       <Container fluid className="px-4">
         <HeaderTvShow />
         <h4 id="text-h4">Trending Now</h4>
-        <FirstGallery />
+        <MovieGallery title={"spider-man"} />
         <h4 id="text-h4">Watch it Again</h4>
-        <SecondGallery />
+        <MovieGallery title={"batman"} />
         <h4 id="text-h4">New Releases</h4>
-        <ThirdGallery />
+        <MovieGallery title={"avengers"} />
       </Container>
 
       <FooterNetflix />
