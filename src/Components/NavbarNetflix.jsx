@@ -22,12 +22,22 @@ const NavbarNetflix = function () {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#TV Show">TV Show</Nav.Link>
-              <Nav.Link href="#Movies">Movies</Nav.Link>
-              <Nav.Link href="#Recently Added">Recently Added</Nav.Link>
-              <Nav.Link href="#My List">My List</Nav.Link>
+            <Nav className="me-auto ">
+              <Nav.Link id="text-links" href="#home">
+                Home
+              </Nav.Link>
+              <Nav.Link id="text-links" href="#TV Show">
+                TV Show
+              </Nav.Link>
+              <Nav.Link id="text-links" href="#Movies">
+                Movies
+              </Nav.Link>
+              <Nav.Link id="text-links" href="#Recently Added">
+                Recently Added
+              </Nav.Link>
+              <Nav.Link id="text-links" href="#My List">
+                My List
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
           <div>
@@ -36,7 +46,9 @@ const NavbarNetflix = function () {
               <Col>
                 <BsSearch className="icons" />
               </Col>
-              <Col className="fw-bold">KIDS</Col>
+              <Col id="KIDS" className="fw-bold">
+                KIDS
+              </Col>
               <Col>
                 <BsBell className="icons" />
               </Col>

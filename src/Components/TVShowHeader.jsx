@@ -5,7 +5,9 @@ const HeaderTvShow = function () {
   return (
     <div className="d-flex justify-content-between">
       <div className="d-flex">
-        <h2 className="mb-4">TV Shows</h2>
+        <h2 id="text-h2" className="mb-4">
+          TV Shows
+        </h2>
         <div className="btn-group" role="group">
           <Dropdown className="ms-4 mt-1">
             <Dropdown.Toggle

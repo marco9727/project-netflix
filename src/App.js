@@ -10,15 +10,15 @@ import ThirdGallery from "./Components/ThirdGallery";
 
 function App() {
   return (
-    <div>
+    <div className="costum-body">
       <NavbarNetflix />
       <Container fluid className="px-4">
         <HeaderTvShow />
-        <h4>Trending Now</h4>
+        <h4 id="text-h4">Trending Now</h4>
         <FirstGallery />
-        <h4>Watch it Again</h4>
+        <h4 id="text-h4">Watch it Again</h4>
         <SecondGallery />
-        <h4>New Releases</h4>
+        <h4 id="text-h4">New Releases</h4>
         <ThirdGallery />
       </Container>
 
