@@ -29,9 +29,10 @@
 
 .costum-img img {
   height: 140px;
-  width: 252px;
+  width: 270px;
   transition: transform 0.2s;
   cursor: pointer;
+  object-fit: cover;
 }
 
 .costum-img img:hover {
