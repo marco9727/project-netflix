@@ -5,13 +5,15 @@ import { BsSearch, BsBell, BsPerson } from "react-icons/bs";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import logo from "../assets/logo.png";
+import { Link, useLocation } from "react-router-dom";
 
 const NavbarNetflix = function () {
+  // const location = useLocation();
   return (
     <div>
       <Navbar expand="lg">
         <Container fluid>
-          <Navbar.Brand href="#home">
+          {/* <Navbar.Brand href="#home">
             <img
               alt=""
               src={logo}
@@ -19,25 +21,30 @@ const NavbarNetflix = function () {
               height="55"
               className="d-inline-block align-top"
             />
-          </Navbar.Brand>
+          </Navbar.Brand> */}
+          <Link to="/">
+            <div className="navbar-brand">
+              <img
+                alt=""
+                src={logo}
+                width="100"
+                height="55"
+                className="d-inline-block align-top"
+              />
+            </div>
+          </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto ">
-              <Nav.Link id="text-links" href="#home">
+            <Nav className="me-auto  ">
+              <Link id="text-links" to="/">
                 Home
-              </Nav.Link>
-              <Nav.Link id="text-links" href="#TV Show">
+              </Link>
+              <Link id="text-links" to="/TvShow">
                 TV Show
-              </Nav.Link>
-              <Nav.Link id="text-links" href="#Movies">
-                Movies
-              </Nav.Link>
-              <Nav.Link id="text-links" href="#Recently Added">
-                Recently Added
-              </Nav.Link>
-              <Nav.Link id="text-links" href="#My List">
-                My List
-              </Nav.Link>
+              </Link>
+              <Link id="text-links">Movies</Link>
+              <Link id="text-links">Recently Added</Link>
+              <Link id="text-links">My List</Link>
             </Nav>
           </Navbar.Collapse>
           <div>

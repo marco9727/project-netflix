@@ -2,8 +2,14 @@
   background-color: #221f1f;
 }
 
+#h1-home {
+  color: #f5f5f1;
+}
+
 #text-links {
   color: #838383;
+  text-decoration: none;
+  margin-inline: 5px;
 }
 
 #text-links:hover {
